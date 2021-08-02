@@ -2,34 +2,22 @@
 
 //Task1
 
-function weekDays ($a)
+function weekDays($a)
 {
-    switch ($a) {
-        case 1:
-            echo "Monday";
-            break;
-        case 2:
-            echo "Tuesday";
-            break;
-        case 3:
-            echo "Wednesday";
-            break;
-        case 4:
-            echo "Thursday";
-            break;
-        case 5:
-            echo "Friday";
-            break;
-        case 6:
-            echo "Saturday";
-            break;
-        case 7:
-            echo "Sunday";
-            break;
-    }
+    $weekDay = [
+        '1' => 'Monday',
+        '2' => 'Tuesday',
+        '3' => 'Wednesday',
+        '4' => 'Thursday',
+        '5' => 'Friday',
+        '6' => 'Saturday',
+        '7' => 'Sunday'
+    ];
+
+    return $weekDay[$a];
 }
 
-weekDays(5);
+echo weekDays(5);
 
 echo '<br>';
 
@@ -87,8 +75,3 @@ function numRand ($z){
     var_dump($arrRand);
 }
 numRand(5);
-
-
-
-
-
